@@ -1,0 +1,72 @@
+
+html {
+    height: 100%
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.table-div {
+    flex: 1;
+    background-color: blue;
+    height: 50%;
+    max-height: 50vh;
+    min-height: 50vh;
+    overflow: scroll;
+}
+
+.bottom-half {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 50%
+}
+
+.info1-div {
+    flex: 1;
+    background-color: yellow;
+}
+
+.data-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.data1 {
+    flex: 1;
+    background-color: red;
+}
+
+.data2 {
+    flex: 1;
+    background-color: green;
+}
+
+/*
+==================================
+Table-specific css
+==================================
+*/
+
+table {
+    table-layout:fixed;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
